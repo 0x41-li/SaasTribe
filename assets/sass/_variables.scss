@@ -1,0 +1,73 @@
+// || FONTS
+
+@font-face {
+  font-family: "montserratbold";
+  src: url("../fonts/montserrat/montserrat-bold.eot");
+  src: url("../fonts/montserrat/montserrat-bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/montserrat/montserrat-bold.woff2") format("woff2"),
+    url("../fonts/montserrat/montserrat-bold.woff") format("woff"),
+    url("../fonts/montserrat/montserrat-bold.ttf") format("truetype"),
+    url("../fonts/montserrat/montserrat-bold.svg#montserratbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserratmedium";
+  src: url("../fonts/montserrat/montserrat-medium.eot");
+  src: url("../fonts/montserrat/montserrat-medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/montserrat/montserrat-medium.woff2") format("woff2"),
+    url("../fonts/montserrat/montserrat-medium.woff") format("woff"),
+    url("../fonts/montserrat/montserrat-medium.ttf") format("truetype"),
+    url("../fonts/montserrat/montserrat-medium.svg#montserratmedium")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserratregular";
+  src: url("../fonts/montserrat/montserrat-regular.eot");
+  src: url("../fonts/montserrat/montserrat-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/montserrat/montserrat-regular.woff2") format("woff2"),
+    url("../fonts/montserrat/montserrat-regular.woff") format("woff"),
+    url("../fonts/montserrat/montserrat-regular.ttf") format("truetype"),
+    url("../fonts/montserrat/montserrat-regular.svg#montserratregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserratsemibold";
+  src: url("../fonts/montserrat/montserrat-semibold.eot");
+  src: url("../fonts/montserrat/montserrat-semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/montserrat/montserrat-semibold.woff2") format("woff2"),
+    url("../fonts/montserrat/montserrat-semibold.woff") format("woff"),
+    url("../fonts/montserrat/montserrat-semibold.ttf") format("truetype"),
+    url("../fonts/montserrat/montserrat-semibold.svg#montserratsemibold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// || COLORS
+
+// | background Colors
+$dark-mode-bgc-primary-color: #377dff;
+$dark-mode-bgc-secondary-color: #212429;
+
+// Text Colors
+$dark-mode-text-primary-color: #D1E0FB;
+$dark-mode-text-secondary-color: #4579F5;
+
+// FONTS VARIABLES
+
+$main-font-regular: "montserratregular", Arial, Helvetica, sans-serif;
+$main-font-medium: "montserratmedium", Arial, Helvetica, sans-serif;
+$main-font-semibold: "montserratsemibold", Arial, Helvetica, sans-serif;
+$main-font-bold: "montserratbold", Arial, Helvetica, sans-serif;
