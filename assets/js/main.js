@@ -1,6 +1,8 @@
 (function IIFEinit() {
   window.addEventListener("load", documentLoaded);
 
+  AOS.init();
+
   let wWidth = window.innerWidth;
 
   function documentLoaded() {

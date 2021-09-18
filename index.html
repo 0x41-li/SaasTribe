@@ -24,17 +24,20 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/aos.css">
   <link rel="stylesheet" href="./assets/css/main.css">
 
+  <script defer src="./assets/js/aos.js"></script>
   <script defer src="./assets/js/main.js"></script>
-
 </head>
 
 <body class="dark-mode">
   <header>
-    <div class="logo-wrapper">
-      <p class="logo-wrapper__para">SaasTribe</p>
-    </div>
+    <a class="logo-link-wrapper" href="./">
+      <div class="logo-wrapper">
+        <p class="logo-wrapper__para">SaasTribe</p>
+      </div>
+    </a>
     <div class="hum-icon">
       <span class="hum-icon__line"></span>
       <span class="hum-icon__line"></span>
@@ -43,7 +46,7 @@
     <nav>
       <ul class="menu-list">
         <li class="menu-list__li">
-          <a class="menu-list__link" href="#">Home</a>
+          <a class="menu-list__link menu-list__link--active" href="#">Home</a>
         </li>
         <li class="menu-list__li">
           <a class="menu-list__link menu-list__link-has-sub-menu" href="#">Company</a>
@@ -60,12 +63,12 @@
   </header>
 
   <main>
-    <section class="first-section">
-      <div class="first__left-part">
+    <section class="first">
+      <div class="first__left-part" data-aos="fade-up">
         <h2 class="first__h2">WELCOME</h2>
         <div class="first__h3-wrapper">
           <div class="first__h3-bg-design-top"></div>
-          <h3 class="first_h3">Ready to help you in your projects!</h3>
+          <h3 class="first__h3">Ready to help you in your projects!</h3>
           <div class="first__h3-bg-design-bottom"></div>
         </div>
         <p class="first__left-part__para">Our sales team will get in touch to better understand your needs, and will
@@ -78,35 +81,50 @@
       </div>
       <div class="first__right-part">
         <div class="first__boxes-wrapper">
-          <div class="first__box">
-            <div class="first__box__img-wrapper"><img src="" alt="" class="first__box__img"></div>
-            <h3 class="first__box__h3"></h3>
-            <p class="first__box__para"></p>
+          <div class="first__box" data-aos="zoom-out">
+            <div class="first__box__img-wrapper">
+              <img src="./assets/images/first-section/people-icon.png" alt="Three Person Illustration"
+                class="first__box__img">
+            </div>
+            <h3 class="first__box__h3">Accounts</h3>
+            <p class="first__box__para">Manage an unlimited number of accounts from one place</p>
           </div>
-          <div class="first__box">
-            <div class="first__box__img-wrapper"><img src="" alt="" class="first__box__img"></div>
-            <h3 class="first__box__h3"></h3>
-            <p class="first__box__para"></p>
+          <div class="first__box" data-aos="zoom-out">
+            <div class="first__box__img-wrapper">
+              <img src="./assets/images/first-section/lock-icon.png" alt="Lock Icon" class="first__box__img">
+            </div>
+            <h3 class="first__box__h3">Roles & Permissions</h3>
+            <p class="first__box__para">Full control with flexible
+              user permissions for views and actions</p>
           </div>
-          <div class="first__box">
-            <div class="first__box__img-wrapper"><img src="" alt="" class="first__box__img"></div>
-            <h3 class="first__box__h3"></h3>
-            <p class="first__box__para"></p>
+          <div class="first__box" data-aos="zoom-out">
+            <div class="first__box__img-wrapper">
+              <img src="./assets/images/first-section/connect-icon.png" alt="A Icon Illustrate Connectivety"
+                class="first__box__img">
+            </div>
+            <h3 class="first__box__h3">Integration</h3>
+            <p class="first__box__para">Connect the tools you already use</p>
           </div>
-          <div class="first__box">
-            <div class="first__box__img-wrapper"><img src="" alt="" class="first__box__img"></div>
-            <h3 class="first__box__h3"></h3>
-            <p class="first__box__para"></p>
+          <div class="first__box" data-aos="zoom-out">
+            <div class="first__box__img-wrapper">
+              <img src="./assets/images/first-section/robot-icon.png" alt="A Robot Icon" class="first__box__img">
+            </div>
+            <h3 class="first__box__h3">Chat Bots</h3>
+            <p class="first__box__para">AI powered chatbots to improve your business and customer satisfaction</p>
           </div>
-          <div class="first__box">
-            <div class="first__box__img-wrapper"><img src="" alt="" class="first__box__img"></div>
-            <h3 class="first__box__h3"></h3>
-            <p class="first__box__para"></p>
+          <div class="first__box" data-aos="zoom-out">
+            <div class="first__box__img-wrapper">
+              <img src="./assets/images/first-section/mail-icon.png" alt="A Mail Icon" class="first__box__img">
+            </div>
+            <h3 class="first__box__h3">In-App Messaging</h3>
+            <p class="first__box__para">Build a better business with proactive messages.</p>
           </div>
-          <div class="first__box">
-            <div class="first__box__img-wrapper"><img src="" alt="" class="first__box__img"></div>
-            <h3 class="first__box__h3"></h3>
-            <p class="first__box__para"></p>
+          <div class="first__box" data-aos="zoom-out">
+            <div class="first__box__img-wrapper">
+              <img src="./assets/images/first-section/book-icon.png" alt="A Book Icon" class="first__box__img">
+            </div>
+            <h3 class="first__box__h3">Knowledge Base</h3>
+            <p class="first__box__para">Create and publish answers for customers</p>
           </div>
         </div>
       </div>

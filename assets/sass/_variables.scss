@@ -60,12 +60,17 @@
 // | background Colors
 $dark-mode-bgc-primary-color: #377dff;
 $dark-mode-bgc-secondary-color: #212429;
+$dark-mode-bgc-third-color: rgba(69,121,245,0.03);
+$dark-mode-bgc-gradient: linear-gradient(to bottom, rgb(45, 47, 51), rgb(39,42,46), rgb(34, 37, 41));
 
-// Text Colors
+//  |Text Colors
 $dark-mode-text-primary-color: #D1E0FB;
 $dark-mode-text-secondary-color: #4579F5;
 
-// FONTS VARIABLES
+// box-shadow
+$dark-mode-shadow: 8px 8px 24px rgba(9, 14, 20, 0.4);
+
+// | FONTS VARIABLES
 
 $main-font-regular: "montserratregular", Arial, Helvetica, sans-serif;
 $main-font-medium: "montserratmedium", Arial, Helvetica, sans-serif;
