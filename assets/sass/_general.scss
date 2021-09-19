@@ -1,8 +1,12 @@
 @use 'variables' as v;
 
-// || GENERAL 
+// || GENERAL
 
-body, html, *, *::after, *::before {
+body,
+html,
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -27,12 +31,43 @@ button {
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+}
+
 // || UTILITIES
 
 .dark-mode {
   background-color: v.$dark-mode-bgc-secondary-color;
 }
 
+.sect__h2 {
+  font-family: v.$main-font-semibold;
+  font-size: 1rem;
+
+  padding: 4px 20px;
+
+  background-color: v.$dark-mode-bgc-third-color;
+  border-radius: 12px;
+
+  color: v.$dark-mode-text-secondary-color;
+}
+
+.sect__h3 {
+  font-family: v.$main-font-bold;
+  font-size: 3rem;
+
+  color: white;
+}
+
+.sect__left-part__para {
+  font-family: v.$main-font-medium;
+  font-size: 2rem;
+
+  color: v.$dark-mode-text-primary-color;
+
+  line-height: 2.6rem;
+}
 
 // | Main
 
@@ -41,13 +76,25 @@ main {
   margin-top: 80px;
 }
 
+@media screen and (min-width: 700px) {
+  // || UTILITIES
+
+  .sect__left-part__para {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sect__left-part__para {
+    width: 420px;
+  }
+}
 
 @media screen and (min-width: 1440px) {
-
   html {
     font-size: 12px;
   }
-  
+
   main {
     margin-top: 160px;
   }

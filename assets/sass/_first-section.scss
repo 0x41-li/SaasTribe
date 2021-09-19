@@ -17,17 +17,6 @@
   padding: 20px;
 }
 
-.first__h2 {
-  font-family: v.$main-font-semibold;
-  font-size: 1rem;
-
-  padding: 4px 20px;
-
-  background-color: v.$dark-mode-bgc-third-color;
-  border-radius: 12px;
-
-  color: v.$dark-mode-text-secondary-color;
-}
 
 .first__h3-wrapper {
   position: relative;
@@ -76,22 +65,6 @@
 
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
-}
-
-.first__h3 {
-  font-family: v.$main-font-bold;
-  font-size: 3rem;
-
-  color: white;
-}
-
-.first__left-part__para {
-  font-family: v.$main-font-medium;
-  font-size: 2rem;
-
-  color: white;
-
-  line-height: 2.6rem;
 }
 
 // first left part btn
@@ -211,10 +184,6 @@
 }
 
 @media screen and (min-width: 700px) {
-  .first__left-part__para {
-    width: 60%;
-  }
-
   .first__boxes-wrapper {
     flex-flow: row wrap;
     justify-content: center;
@@ -249,10 +218,6 @@
     line-height: 3.2rem;
   }
 
-  .first__left-part__para {
-    width: 420px;
-  }
-
   .first__box:nth-child(odd),
   .first__box:nth-child(even) {
     flex: 1 1 30%;
@@ -267,8 +232,9 @@
   }
 
   .first__h2 {
-    margin-bottom: -20px;
+    margin-bottom: -10px;
   }
+
 
   // | First left part
 

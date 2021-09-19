@@ -1,0 +1,164 @@
+@use 'variables' as v;
+
+.second {
+  display: flex;
+  padding: 30px 0px;
+
+  overflow-x: hidden;
+}
+
+// second sec left part
+
+.second__left-part {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px 20px;
+}
+
+.second__statistics {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+
+  margin-top: 20px;
+}
+
+.second__statistics p:nth-child(1) {
+  font-family: v.$main-font-bold;
+  font-size: 3.4rem;
+  color: v.$dark-mode-text-secondary-color;
+}
+
+.second__statistics p:nth-child(2) {
+  font-family: v.$main-font-semibold;
+  font-size: 1.4rem;
+  color: v.$dark-mode-text-primary-color;
+}
+
+.second__h3-wrapper {
+  position: relative;
+}
+
+.second__h3-bg-design-top {
+  box-sizing: content-box;
+
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+
+  height: 100%;
+  width: 1216px;
+
+  background-color: v.$dark-mode-bgc-primary-color;
+
+  z-index: -999;
+
+  padding: 20px 60px;
+
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+// second sec right part
+
+.second__right-part {
+  display: none;
+}
+
+.second__image-wrapper {
+  padding: 20px 20px 0px 20px;
+
+  box-shadow: v.$dark-mode-shadow;
+
+  background: v.$dark-mode-bgc-gradient;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .second {
+    max-width: 90%;
+
+    margin: auto;
+
+    gap: 20px;
+    justify-content: space-between;
+
+    padding: 100px 0px;
+  }
+
+  .second__h3 {
+    width: 420px;
+  }
+
+  // right part
+  .second__right-part {
+    display: block;
+  }
+
+  .second__image-wrapper img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .second {
+    max-width: 1366px;
+    margin: auto;
+    padding: 200px 0px;
+  }
+
+  // left part
+
+  .second__left-part {
+    gap: 50px;
+    padding-left: 80px;
+  }
+
+  .second__h2 {
+    margin-bottom: -20px;
+  }
+
+  .second__h3-bg-design-top {
+    display: block;
+  }
+
+  // right part
+
+  .second__statistics {
+    gap: 80px;
+  }
+
+  .second__statistics > div {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+  }
+
+  .second__right-part {
+    padding-right: 80px;
+  }
+
+  .second__image-wrapper {
+    width: 492px;
+    height: 517px;
+
+    align-items: end;
+  }
+
+  .second__image-wrapper img {
+    width: 478px;
+    height: 574.17px;
+    max-width: unset;
+  }
+}
