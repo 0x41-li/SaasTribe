@@ -1,10 +1,16 @@
 @use 'variables' as v;
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
+  width: 100%;
+  box-shadow: v.$dark-mode-shadow;
+  height: 80px;
+}
 
+.header-wrapper {
   padding: 20px;
 
   display: flex;
@@ -13,11 +19,7 @@ header {
   height: 80px;
   width: 100%;
 
-  box-shadow: v.$dark-mode-shadow;
-
   background-color: v.$dark-mode-bgc-secondary-color;
-
-  z-index: 999;
 }
 
 // Logo
@@ -175,7 +177,7 @@ nav {
 @media screen and (min-width: 768px) {
   // | Header
 
-  header {
+  .header-wrapper {
     justify-content: space-between;
     align-items: center;
     padding-right: 10px; 
@@ -242,7 +244,7 @@ nav {
 
     width: 160px;
 
-    padding: 14px;
+    padding: 10px 0px;
 
     border-radius: 10px;
     border: 1px solid v.$dark-mode-bgc-primary-color;
@@ -263,14 +265,9 @@ nav {
 
   // | Header
 
-  header {
+  .header-wrapper {
     max-width: 90%;
     margin: auto;
-
-    left: 50%;
-    transform: translateX(-50%);
-
-    box-shadow: unset;
   }
 
   // menu
@@ -297,7 +294,7 @@ nav {
 
   // | Header
 
-  header {
+  .header-wrapper {
     max-width: 1366px;
     margin: auto;
   }
@@ -316,7 +313,7 @@ nav {
   .menu-list__btn {
     margin-left: 80px;
     font-size: 2rem;
-    width: 220px;
+    width: 260px;
   }
 
 }

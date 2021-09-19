@@ -90,6 +90,8 @@
   font-size: 2rem;
 
   color: white;
+
+  line-height: 2.6rem;
 }
 
 // first left part btn
@@ -272,12 +274,13 @@
 
   .first__left-part {
     flex: 1 0 40%;
-    gap: 50px;
+    gap: 40px;
     padding-left: 80px;
   }
 
   .first__left-part__para {
     margin-top: 20px;
+    line-height: 2.4rem;
     width: 100%;
   }
 

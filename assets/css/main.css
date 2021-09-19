@@ -74,17 +74,22 @@ main {
   }
 }
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 8px 8px 24px rgba(9, 14, 20, 0.4);
+  height: 80px;
+}
+
+.header-wrapper {
   padding: 20px;
   display: flex;
   justify-content: space-between;
   height: 80px;
   width: 100%;
-  box-shadow: 8px 8px 24px rgba(9, 14, 20, 0.4);
   background-color: #212429;
-  z-index: 999;
 }
 
 .logo-wrapper {
@@ -214,7 +219,7 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  .header-wrapper {
     justify-content: space-between;
     align-items: center;
     padding-right: 10px;
@@ -270,7 +275,7 @@ nav {
     margin-left: 30px;
     font-size: 1.4rem;
     width: 160px;
-    padding: 14px;
+    padding: 10px 0px;
     border-radius: 10px;
     border: 1px solid #377dff;
   }
@@ -285,12 +290,9 @@ nav {
   }
 }
 @media screen and (min-width: 1024px) {
-  header {
+  .header-wrapper {
     max-width: 90%;
     margin: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: unset;
   }
 
   .menu-list__link {
@@ -309,7 +311,7 @@ nav {
   }
 }
 @media screen and (min-width: 1440px) {
-  header {
+  .header-wrapper {
     max-width: 1366px;
     margin: auto;
   }
@@ -326,7 +328,7 @@ nav {
   .menu-list__btn {
     margin-left: 80px;
     font-size: 2rem;
-    width: 220px;
+    width: 260px;
   }
 }
 .first {
@@ -397,6 +399,7 @@ nav {
   font-family: "montserratmedium", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: white;
+  line-height: 2.6rem;
 }
 
 .first__btns-wrapper {
@@ -550,12 +553,13 @@ nav {
 
   .first__left-part {
     flex: 1 0 40%;
-    gap: 50px;
+    gap: 40px;
     padding-left: 80px;
   }
 
   .first__left-part__para {
     margin-top: 20px;
+    line-height: 2.4rem;
     width: 100%;
   }
 
