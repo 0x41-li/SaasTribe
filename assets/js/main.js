@@ -64,7 +64,7 @@
           clients: 5000,
           easing: "linear",
           round: 1,
-          duration: 2000,
+          duration: 1400,
           update: () => {
             secondSecRatingNum.innerHTML = values.rating + "%";
             secondSecClientsNum.innerHTML = values.clients + "+";
