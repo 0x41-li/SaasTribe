@@ -6,6 +6,7 @@
   flex-flow: column nowrap;
   align-items: center;
   gap: 10px;
+  padding-bottom: 60px;
 }
 
 .sixth__h3 {
@@ -40,12 +41,14 @@
   font-size: 1.6rem;
   color: #fafafa;
   font-family: v.$main-font-bold;
+  margin-bottom: 6px;
 }
 
 .sixth__faq-box__para {
   font-size: 1.4rem;
   font-family: v.$main-font-medium;
   color: v.$dark-mode-text-primary-color;
+  line-height: 1.8rem;
 }
 
 .sixth__faq-box:nth-child(1) {
