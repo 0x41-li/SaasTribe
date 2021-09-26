@@ -34,6 +34,10 @@
   margin-top: 20px;
 }
 
+.light-mode .fifth__trusted-by-wrapper {
+  background: linear-gradient(to right, #fff, #F6F9FF, #fff);
+}
+
 @media screen and (min-width: 768px) {
   .fifth__trusted-by-wrapper {
     margin-top: 20px;

@@ -93,9 +93,16 @@
   transition: background 0.5s, border 0.5s;
 }
 
-.first__btn:nth-child(1):hover {
-  background-color: v.$dark-mode-bgc-secondary-color;
+.light-mode 
+.first__btn:nth-child(1) {
   border: 1px solid v.$dark-mode-bgc-primary-color;
+  transition: background 0.5s, border 0.5s, color 0.4s;
+}
+
+.first__btn:nth-child(1):hover {
+  background-color: white;
+  border: 1px solid v.$dark-mode-bgc-primary-color;
+  color: v.$dark-mode-bgc-primary-color;
 }
 
 .first__btn:nth-child(2) {
@@ -104,13 +111,21 @@
   transition: background 0.5s, border 0.5s;
 }
 
+.light-mode .first__btn:nth-child(2) {
+  color: v.$dark-mode-bgc-primary-color;
+}
+
 .first__btn:nth-child(2):hover {
   background-color: v.$dark-mode-bgc-primary-color;
 }
 
+.light-mode .first__btn:nth-child(2):hover {
+  color: white;
+}
 // | right part
 
 .first__right-part {
+  padding-top: 30px;
   overflow: hidden;
   padding-bottom: 30px;
 }
@@ -144,6 +159,10 @@
   background: v.$dark-mode-bgc-gradient;
 }
 
+.light-mode .first__box {
+  background: #fff;
+}
+
 .first__box:nth-child(even) {
   align-self: flex-end;
 }
@@ -173,6 +192,10 @@
   color: white;
 }
 
+.light-mode .first__box__h3 {
+  color: #273B60;
+}
+
 .first__box__para {
   color: v.$dark-mode-text-primary-color;
 
@@ -181,6 +204,10 @@
   font-size: 1.4rem;
 
   width: 90%;
+}
+
+.light-mode .first__box__para {
+  color: #273B60;
 }
 
 @media screen and (min-width: 700px) {
@@ -229,7 +256,7 @@
   .first {
     flex-flow: row nowrap;
     max-width: 1366px;
-    padding-top: 80px;
+    padding-top: 0px;
   }
 
   .first__h2 {
@@ -268,6 +295,7 @@
 
   .first__right-part {
     padding-right: 80px;
+    padding-left: 30px;
   }
 
   .first__boxes-wrapper {

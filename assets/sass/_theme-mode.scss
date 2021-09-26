@@ -1,0 +1,121 @@
+@use "variables" as v;
+
+.popup-bgc-body {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.theme-mode-popup {
+  position: fixed;
+  top: -100px;
+  left: calc(50% - 150px);
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  z-index: 99999;
+  padding: 20px;
+  border-radius: 10px;
+  transition: top 1s;
+}
+
+.on.theme-mode-popup {
+  background-color: v.$dark-mode-bgc-secondary-color;
+}
+
+.theme-mode-para {
+  font-size: 3vw;
+  font-family: v.$main-font-semibold;
+  transition: color 1s;
+}
+
+.on .theme-mode-para {
+  color: white;
+}
+
+.theme-mode-input {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: v.$dark-mode-bgc-secondary-color;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 1s;
+}
+
+.on .theme-mode-input {
+  background-color: #fff;
+}
+
+.theme-mode__circle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 15px;
+  background-color: #fff;
+  transition: left 1s, background-color 1s;
+}
+
+.on .theme-mode__circle {
+  left: 32px;
+  background-color: v.$dark-mode-bgc-secondary-color;
+}
+
+.close-popup {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.close-popup span {
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 4px;
+  background-color: v.$dark-mode-bgc-secondary-color;
+  border-radius: 2px;
+  transition: background-color 1s;
+}
+
+.on .close-popup span {
+  background-color: #fff;
+}
+
+.close-popup span:nth-child(1) {
+  transform: rotateZ(45deg);
+}
+
+.close-popup span:nth-child(2) {
+  transform: rotateZ(-45deg);
+}
+
+
+@media screen and (min-width: 500px) {
+  .theme-mode-para {
+    font-size: 2vw;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .theme-mode-para {
+    font-size: 1.6vw;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  .theme-mode-para {
+    font-size: 16px;
+  }
+}

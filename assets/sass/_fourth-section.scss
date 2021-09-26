@@ -39,6 +39,7 @@
   border-top-right-radius: 100px;
 }
 
+
 .fourth__tips-wrapper {
   margin-top: 20px;
   display: flex;
@@ -70,11 +71,19 @@
   line-height: 2rem;
 }
 
+.light-mode .fourth__tip__fpara {
+  color: #273B60;
+}
+
 .fourth__tip__spara {
   color: v.$dark-mode-text-primary-color;
   font-size: 1.4rem;
   font-family: v.$main-font-medium;
   line-height: 2rem;
+}
+
+.light-mode .fourth__tip__spara {
+  color: #273B60;
 }
 
 // right part
@@ -96,6 +105,10 @@
   justify-content: center;
 
   border-radius: 10px;
+}
+
+.light-mode .fourth__image-wrapper  {
+  background: #fff;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,8 +1,12 @@
 @use "variables" as v;
 
 footer {
-  background: linear-gradient(to bottom,#212429,#1A1C20);
+  background: linear-gradient(to bottom, #212429, #1a1c20);
   padding: 30px 20px;
+}
+
+.light-mode footer {
+  background: #F6F9FF;
 }
 
 .footer__top-part {
@@ -18,9 +22,13 @@ footer {
 }
 
 .footer__logo {
-  color: #FAFAFA;
+  color: #fafafa;
   font-family: v.$main-font-medium;
   font-size: 2rem;
+}
+
+.light-mode .footer__logo {
+  color: #273B60;
 }
 
 .footer__left-part__para {
@@ -29,6 +37,10 @@ footer {
   font-size: 1.4rem;
   line-height: 1.8rem;
   max-width: 300px;
+}
+
+.light-mode .footer__left-part__para {
+  color: #273B60;
 }
 
 .footer__social-media-wrapper {
@@ -53,8 +65,12 @@ footer {
 .footer__right-part__ul-title {
   margin-bottom: 6px;
   font-family: v.$main-font-semibold;
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 1.8rem;
+}
+
+.light-mode .footer__right-part__ul-title {
+  color: #273B60;
 }
 
 .footer__right-part__link {
@@ -63,13 +79,16 @@ footer {
   font-size: 1.4rem;
 }
 
+.light-mode .footer__right-part__link {
+  color: #273B60;
+}
+
 .footer__bottom-part {
   margin-top: 40px;
-  color: #77838F;
+  color: #77838f;
   font-family: v.$main-font-medium;
   font-size: 1.2rem;
 }
-
 
 @media screen and (min-width: 768px) {
   .footer__right-part {
@@ -79,7 +98,8 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  .footer__top-part, .footer__bottom-part {
+  .footer__top-part,
+  .footer__bottom-part {
     max-width: 90%;
     margin: 40px auto;
     flex-flow: row nowrap;
@@ -103,13 +123,12 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
-
-  .footer__top-part, .footer__bottom-part {
+  .footer__top-part,
+  .footer__bottom-part {
     max-width: 1366px;
     margin: 40px auto;
     flex-flow: row nowrap;
   }
-
 
   .footer__left-part {
     gap: 30px;

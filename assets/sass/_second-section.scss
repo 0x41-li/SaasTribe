@@ -38,6 +38,10 @@
   color: v.$dark-mode-text-primary-color;
 }
 
+.light-mode .second__statistics p:nth-child(2) {
+  color: #526280;
+}
+
 .second__h3-wrapper {
   position: relative;
 }
@@ -84,6 +88,10 @@
   justify-content: center;
 
   border-radius: 10px;
+}
+
+.light-mode .second__image-wrapper {
+  background: #fff;
 }
 
 @media screen and (min-width: 1024px) {

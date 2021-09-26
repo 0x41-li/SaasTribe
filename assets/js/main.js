@@ -6,11 +6,41 @@
   let wWidth = window.innerWidth;
 
   function documentLoaded() {
-    if (wWidth < 768) {
-      menuFunc();
-    }
+    menuFunc();
 
     animations();
+
+    popupShowHideAndThemeChangeFunc();
+  }
+
+  // Theme popup show/hide and theme change functionality
+  function popupShowHideAndThemeChangeFunc() {
+    let popupBox = document.querySelector(".theme-mode-popup");
+    let popupBodyBgc = document.querySelector(".popup-bgc-body");
+    let popupInput = document.querySelector(".theme-mode-input");
+    let closePopupIcon = document.querySelector(".close-popup");
+
+    popupInput.addEventListener("click", changeTheme);
+    closePopupIcon.addEventListener("click", function () {
+      popupBox.style.display = "none";
+      popupBodyBgc.style.display = "none";
+    });
+
+    let id = setTimeout(() => {
+      popupBodyBgc.style.display = "block";
+      popupBox.style.top = "40px";
+      clearTimeout(id);
+    }, 3000);
+
+    function changeTheme() {
+      if (popupBox.classList.contains("on")) {
+        popupBox.classList.remove("on");
+        document.body.className = "dark-mode";
+      } else {
+        popupBox.classList.add("on");
+        document.body.className = "light-mode";
+      }
+    }
   }
 
   // Make the functionality of the menu on the mobile

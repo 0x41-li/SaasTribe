@@ -12,6 +12,7 @@ html,
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   line-height: 100%;
+  transition: background-color 1s, color 1s;
 }
 
 html {
@@ -41,6 +42,10 @@ img {
   background-color: v.$dark-mode-bgc-secondary-color;
 }
 
+.light-mode {
+  background-color: #fff;
+}
+
 .sect__h2 {
   font-family: v.$main-font-semibold;
   font-size: 1rem;
@@ -53,11 +58,16 @@ img {
   color: v.$dark-mode-text-secondary-color;
 }
 
+
 .sect__h3 {
   font-family: v.$main-font-bold;
   font-size: 3rem;
 
   color: white;
+}
+
+.light-mode .sect__h3 {
+  color: #071E48;
 }
 
 .sect__left-part__para {
@@ -67,6 +77,10 @@ img {
   color: v.$dark-mode-text-primary-color;
 
   line-height: 2.6rem;
+}
+
+.light-mode .sect__left-part__para {
+  color: #071E48;
 }
 
 // | Main
@@ -102,4 +116,9 @@ main {
   section {
     max-width: 1366px;
   }
+
+  .light-mode .sect__h3 {
+    color: #fff;
+  }
+  
 }

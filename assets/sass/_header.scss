@@ -22,6 +22,10 @@ header {
   background-color: v.$dark-mode-bgc-secondary-color;
 }
 
+.light-mode .header-wrapper {
+  background-color: #fff;
+}
+
 // Logo
 .logo-wrapper {
   position: relative;
@@ -70,6 +74,12 @@ nav {
   box-shadow: v.$dark-mode-shadow;    
 }
 
+.light-mode nav {
+  background-color: #fff;
+  box-shadow: 10px 10px 10px #0002;
+  border-top: 1px solid #3331;
+}
+
 // show menu
 .show {
   max-height: 260px;
@@ -102,12 +112,21 @@ nav {
   transition: background-color 0.5s;
 }
 
+.light-mode .menu-list__link {
+  color: #273B5F;
+}
+
 .menu-list__link-has-sub-menu {
   background: url(../icons/arrow-down-solid.png) no-repeat center right 20px;
 }
 
 .menu-list__link:hover {
   background-color: black;
+}
+
+.light-mode .menu-list__link:hover {
+  background-color: transparent;
+  color: black;
 }
 
 .menu-list__btn {
@@ -160,6 +179,10 @@ nav {
   transition: transform 0.5s, opacity 0.5s;
 }
 
+.light-mode .hum-icon__line {
+  background-color: v.$dark-mode-bgc-primary-color;
+} 
+
 .close .hum-icon__line:nth-child(1) {
   top: 6px;
   transform: rotateZ(-40deg) translateY(50%);
@@ -210,6 +233,11 @@ nav {
     box-shadow: unset;
   }
 
+  .light-mode nav {
+    box-shadow: unset;
+    border-top: unset;
+  }
+
   .menu-list {
     flex-flow: row nowrap;
     justify-content: center;
@@ -248,6 +276,11 @@ nav {
 
     border-radius: 10px;
     border: 1px solid v.$dark-mode-bgc-primary-color;
+  }
+
+  .light-mode .menu-list__btn:hover {
+    background-color: #fff;
+    color: #273B5F;
   }
 
   .menu-list__btn:hover {
