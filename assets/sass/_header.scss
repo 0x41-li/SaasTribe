@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 header {
   position: fixed;
@@ -74,7 +74,7 @@ nav {
   overflow: hidden;
   transition: max-height 1s, padding 1s;
 
-  box-shadow: v.$dark-mode-shadow;    
+  box-shadow: v.$dark-mode-shadow;
 }
 
 .light-mode nav {
@@ -116,7 +116,7 @@ nav {
 }
 
 .light-mode .menu-list__link {
-  color: #273B5F;
+  color: #273b5f;
 }
 
 .menu-list__link-has-sub-menu {
@@ -184,7 +184,7 @@ nav {
 
 .light-mode .hum-icon__line {
   background-color: v.$dark-mode-bgc-primary-color;
-} 
+}
 
 .close .hum-icon__line:nth-child(1) {
   top: 6px;
@@ -206,7 +206,7 @@ nav {
   .header-wrapper {
     justify-content: space-between;
     align-items: center;
-    padding-right: 10px; 
+    padding-right: 10px;
   }
 
   // Logo
@@ -250,7 +250,7 @@ nav {
   .menu-list__link {
     font-size: 1.2rem;
     padding: 10px 20px;
-    transition: color .5s;
+    transition: color 0.5s;
   }
 
   .menu-list__link--active {
@@ -263,9 +263,9 @@ nav {
   }
 
   .menu-list__link-has-sub-menu {
-    background: url(../icons/arrow-down-solid.png) no-repeat center right 4px / 10px;
+    background: url(../icons/arrow-down-solid.png) no-repeat center right 4px /
+      10px;
   }
-  
 
   .menu-list__btn {
     margin-top: 0;
@@ -283,7 +283,7 @@ nav {
 
   .light-mode .menu-list__btn:hover {
     background-color: #fff;
-    color: #273B5F;
+    color: v.$dark-mode-text-secondary-color;
   }
 
   .menu-list__btn:hover {
@@ -298,7 +298,6 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-
   // | Header
 
   .header-wrapper {
@@ -314,20 +313,18 @@ nav {
   }
 
   .menu-list__link-has-sub-menu {
-    background: url(../icons/arrow-down-solid.png) no-repeat center right 0px / 16px;
+    background: url(../icons/arrow-down-solid.png) no-repeat center right 0px /
+      16px;
   }
-
 
   .menu-list__btn {
     margin-left: 40px;
     font-size: 1.8rem;
     width: 200px;
   }
-
 }
 
 @media screen and (min-width: 1440px) {
-
   // | Header
 
   .header-wrapper {
@@ -343,7 +340,8 @@ nav {
   }
 
   .menu-list__link-has-sub-menu {
-    background: url(../icons/arrow-down-solid.png) no-repeat center right 16px / 18px;
+    background: url(../icons/arrow-down-solid.png) no-repeat center right 16px /
+      18px;
   }
 
   .menu-list__btn {
@@ -351,5 +349,4 @@ nav {
     font-size: 2rem;
     width: 260px;
   }
-
 }
