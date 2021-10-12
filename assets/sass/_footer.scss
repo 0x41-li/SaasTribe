@@ -74,9 +74,19 @@ footer {
 }
 
 .footer__right-part__link {
+  display: block;
   color: v.$dark-mode-text-primary-color;
   font-family: v.$main-font-medium;
   font-size: 1.4rem;
+  transition: transform .6s;
+}
+
+.footer__right-part__li {
+  cursor: pointer;
+}
+
+.footer__right-part__li:hover .footer__right-part__link {
+  transform: translateX(10px);
 }
 
 .light-mode .footer__right-part__link {
