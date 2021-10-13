@@ -67,7 +67,7 @@
             <a class="menu-list__link menu-list__link-has-sub-menu" href="#">Company</a>
           </li>
           <li class="menu-list__li">
-            <a class="menu-list__link menu-list__link-has-sub-menu" href="#">Account</a>
+            <a data-pages="login-page" class="menu-list__link menu-list__link-has-sub-menu" href="#">Account</a>
           </li>
           <li class="menu-list__li">
             <a class="menu-list__link menu-list__link-has-sub-menu" href="#">Products</a>
@@ -271,7 +271,8 @@
       <h2 class="sixth__h2 sect__h2" data-aos="fade-up">FAQ</h2>
       <h3 class="sixth__h3 sect__h3" data-aos="fade-up">What you should know
         .</h3>
-      <p class="sixth__para sect__left-part__para" data-aos="fade-up">Check out the key features of our template. They can help you create
+      <p class="sixth__para sect__left-part__para" data-aos="fade-up">Check out the key features of our template. They
+        can help you create
         your first-class
         project.</p>
       <div class="sixth__faq-wrapper">
@@ -309,6 +310,42 @@
         </div>
       </div>
     </section>
+
+
+    <!-- login page -->
+    <section data-page="login-page" class="login-page">
+      <div class="ctn">
+        <div role="button" class="login-page__header">
+          <div class="back">
+            <img src="./assets/icons/back-icon.png" alt="">
+          </div>
+          <div role="button" class="close">
+            <img src="./assets/icons/close-icon.png" alt="">
+          </div>
+        </div>
+        <div class="login-page__body">
+          <div class="left-part">
+            <h2 class="body__title">Sign In</h2>
+            <p class="body__para">To interact with your account</p>
+            <form action="">
+              <input type="text" name="email" id="email" placeholder="Email">
+              <input type="password" name="password" id="password" placeholder="Password">
+              <div class="form__remember-me-ctn">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <p class="remember-me-ctn__para">Remember me</p>
+              </div>
+              <button class="body__form-btn">Sign In</button>
+            </form>
+            <p class="create-account">Don't have an account yet? <a href="">Sign Up</a></p>
+          </div>
+          <div class="right-part">
+            <div class="box">
+              <img src="./assets/images/fourth-section/a-person-holding-a-pc.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 
@@ -319,16 +356,20 @@
         <p class="footer__left-part__para">Ready to help launch your project along with our well-designed pages.</p>
         <div class="footer__social-media-wrapper">
           <div class="footer__social-media-box">
-            <a class="footer__social-media-link" href=""><img src="./assets/images/footer/facebook.png" alt="Facebook Logo"></a>
+            <a class="footer__social-media-link" href=""><img src="./assets/images/footer/facebook.png"
+                alt="Facebook Logo"></a>
           </div>
           <div class="footer__social-media-box">
-            <a class="footer__social-media-link" href=""><img src="./assets/images/footer/instagram.png" alt="Instagram Logo"></a>
+            <a class="footer__social-media-link" href=""><img src="./assets/images/footer/instagram.png"
+                alt="Instagram Logo"></a>
           </div>
           <div class="footer__social-media-box">
-            <a class="footer__social-media-link" href=""><img src="./assets/images/footer/twitter.png" alt="Twitter Logo"></a>
+            <a class="footer__social-media-link" href=""><img src="./assets/images/footer/twitter.png"
+                alt="Twitter Logo"></a>
           </div>
           <div class="footer__social-media-box">
-            <a class="footer__social-media-link" href=""><img src="./assets/images/footer/dribbble.png" alt="Dribble Logo"></a>
+            <a class="footer__social-media-link" href=""><img src="./assets/images/footer/dribbble.png"
+                alt="Dribble Logo"></a>
           </div>
         </div>
       </div>

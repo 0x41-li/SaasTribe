@@ -1,0 +1,185 @@
+@use "variables" as v;
+
+.login-page {
+  position: absolute;
+  top: -80px;
+  left: -100vw;
+  height: 100vh;
+  width: 100vw;
+  background-color: v.$dark-mode-bgc-secondary-color;
+  z-index: 9999;
+  padding: 20px;
+  transition: left 0.6s;
+}
+
+.ctn {
+  @media screen and (min-width: 1024px) {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+.login-page__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-page__body {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 4rem;
+  }
+}
+
+.left-part {
+  flex: 0 0 400px;
+  margin: auto;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: unset;
+  }
+}
+
+.body__title {
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-family: v.$main-font-bold;
+  text-align: center;
+  color: v.$dark-mode-text-primary-color;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 0px;
+  }
+}
+
+.body__para {
+  margin-top: 1rem;
+  font-family: v.$main-font-regular;
+  color: #77838f;
+  text-align: center;
+  @media screen and (min-width: 1024px) {
+    margin-top: -2rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 14px;
+  margin-top: 3rem;
+}
+
+form input {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: v.$dark-mode-text-primary-color;
+  font-family: v.$main-font-medium;
+  outline: none;
+  line-height: 100%;
+}
+
+form input::placeholder {
+  color: v.$dark-mode-bgc-primary-color;
+  font-family: v.$main-font-medium;
+  line-height: 100%;
+}
+
+form input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 30px;
+}
+
+form input[type="checkbox"]:checked + .remember-me-ctn__para::before {
+  background: url("../icons/check-solid.png") no-repeat center center / 16px
+      16px,
+    v.$dark-mode-text-primary-color;
+}
+
+form .form__remember-me-ctn {
+  position: relative;
+}
+
+form .remember-me-ctn__para {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: v.$dark-mode-text-primary-color;
+  font-size: 1.2rem;
+  font-family: v.$main-font-medium;
+}
+
+form .remember-me-ctn__para::before {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: v.$dark-mode-text-primary-color;
+  opacity: 1;
+  border-radius: 8px;
+}
+
+.body__form-btn {
+  padding: 16px 20px;
+  background-color: v.$dark-mode-bgc-primary-color;
+  color: v.$dark-mode-text-primary-color;
+  font-family: v.$main-font-semibold;
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+
+.body__form-btn:hover {
+  background-color: #2e6fe9;
+}
+
+.create-account {
+  text-align: center;
+  margin-top: 4rem;
+  color: v.$dark-mode-text-primary-color;
+  font-family: v.$main-font-medium;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 1rem;
+  }
+}
+
+.create-account a {
+  color: v.$dark-mode-text-secondary-color;
+}
+
+.right-part {
+  display: none;
+  flex: 1;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.right-part .box {
+  position: relative;
+  margin-top: 10%;
+  display: flex;
+  justify-content: flex-end;
+  width: 350px;
+  height: 360px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.right-part img {
+  position: absolute;
+  bottom: -1px;
+  flex: 0 0 auto;
+  padding: 0px 20px;
+  width: 100%;
+}

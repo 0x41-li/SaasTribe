@@ -11,6 +11,8 @@
     animations();
 
     popupShowHideAndThemeChangeFunc();
+
+    pagesChange();
   }
 
   // Theme popup show/hide and theme change functionality
@@ -119,5 +121,11 @@
         (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
+  }
+
+
+  function pagesChange() {
+    let links = document.querySelectorAll('a[date-pages]');
+    console.log(links)
   }
 })();
