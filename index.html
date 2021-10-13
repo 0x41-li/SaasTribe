@@ -67,7 +67,7 @@
             <a class="menu-list__link menu-list__link-has-sub-menu" href="#">Company</a>
           </li>
           <li class="menu-list__li">
-            <a data-pages="login-page" class="menu-list__link menu-list__link-has-sub-menu" href="#">Account</a>
+            <a data-page="login-page" class="menu-list__link menu-list__link-has-sub-menu" href="#">Account</a>
           </li>
           <li class="menu-list__li">
             <a class="menu-list__link menu-list__link-has-sub-menu" href="#">Products</a>
@@ -313,13 +313,13 @@
 
 
     <!-- login page -->
-    <section data-page="login-page" class="login-page">
+    <section data-page="login-page" class="page">
       <div class="ctn">
-        <div role="button" class="login-page__header">
-          <div class="back">
+        <div class="login-page__header">
+          <div role="button" class="page__back">
             <img src="./assets/icons/back-icon.png" alt="">
           </div>
-          <div role="button" class="close">
+          <div role="button" class="page__close">
             <img src="./assets/icons/close-icon.png" alt="">
           </div>
         </div>
@@ -336,7 +336,38 @@
               </div>
               <button class="body__form-btn">Sign In</button>
             </form>
-            <p class="create-account">Don't have an account yet? <a href="">Sign Up</a></p>
+            <p class="create-account">Don't have an account yet? <a href="" data-page="signin-page">Sign Up</a></p>
+          </div>
+          <div class="right-part">
+            <div class="box">
+              <img src="./assets/images/fourth-section/a-person-holding-a-pc.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-page="signin-page" class="page">
+      <div class="ctn">
+        <div class="login-page__header">
+          <div role="button" class="page__back">
+            <img src="./assets/icons/back-icon.png" alt="">
+          </div>
+          <div role="button" class="page__close">
+            <img src="./assets/icons/close-icon.png" alt="">
+          </div>
+        </div>
+        <div class="login-page__body">
+          <div class="left-part">
+            <h2 class="body__title">Sign Up</h2>
+            <p class="body__para">To interact with your account</p>
+            <form action="">
+              <input type="text" name="name" id="name" placeholder="Your Name">
+              <input type="text" name="email"
+                id="emailSignUp" placeholder="Email">
+              <input type="password" name="password" id="password" placeholder="Password">
+              <button class="body__form-btn">Sign In</button>
+            </form>
+            <p class="create-account">Don't have an account yet? <a href="" data-page="login-page">Sign In</a></p>
           </div>
           <div class="right-part">
             <div class="box">

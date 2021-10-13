@@ -123,9 +123,58 @@
     );
   }
 
-
   function pagesChange() {
-    let links = document.querySelectorAll('a[date-pages]');
-    console.log(links)
+    let links = document.querySelectorAll("a[data-page]");
+    let pageBacks = document.querySelectorAll(".page__back");
+    let pageCloses = document.querySelectorAll(".page__close");
+    let pages = document.querySelectorAll("section[data-page]");
+
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        let page = document.querySelector(
+          "section[data-page='" + link.getAttribute("data-page") + "']"
+        );
+
+        if (!page.classList.contains("open")) {
+          window.scrollTo(0, 0);
+          page.classList.add("open");
+        }
+
+        overflowBodyStyle();
+      });
+    });
+
+    pageBacks.forEach((pageBack) => {
+      pageBack.addEventListener("click", () => {
+        let pageSec = pageBack.parentElement.parentElement.parentElement;
+
+        pageSec.classList.remove("open");
+        overflowBodyStyle();
+      });
+    });
+
+    pageCloses.forEach((pageClose) => {
+      pageClose.addEventListener("click", () => {
+        for (let i = 0; i < pages.length; i++) {
+          const page = pages[i];
+          page.classList.remove("open");
+        }
+        overflowBodyStyle();
+      });
+    });
+
+    function overflowBodyStyle() {
+      for (let i = 0; i < pages.length; i++) {
+        const page = pages[i];
+        if (page.classList.contains("open")) {
+          document.body.style.overflow = "hidden";
+          break;
+        } else {
+          document.body.style.overflow = "auto";
+        }
+      }
+    }
   }
 })();
